@@ -20,14 +20,14 @@ function setup() {
 //메인 비트 표현
 function draw() {
   r = random(250);
-  g = random(80);
-  b = random(190);
+  g = random(40);
+  b = random(170);
 
   background(r, g, b, 2);
 
   noStroke();
-  fill(r, g, b, 197);
-  dia = (tan(angle) * diameter) / 7 + diameter / 8;
+  fill(r, g, b, 220);
+  dia = (tan(angle) * diameter) / 7 + diameter / 3;
   ellipse(mouseX, mouseY, dia);
 
   angle = angle + 0.09;

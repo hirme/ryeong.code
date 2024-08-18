@@ -1,0 +1,42 @@
+let dia;
+let angle;
+let r, g, b;
+
+function setup() {
+  createCanvas(windowWidth,windowHeight);
+  noStroke();
+  diameter = 80;
+  angle = 0;
+}
+
+//메인 비트 표현
+function draw() {
+  r = random(250);
+  g = random(80);
+  b = random(190);
+
+  background(r, g, b, 2);
+
+  noStroke();
+  fill(r, g, b, 197);
+  dia = (tan(angle) * diameter) / 7 + diameter / 8;
+  ellipse(mouseX, mouseY, dia);
+
+  angle = angle + 0.09;
+
+  // 베이스기타 형태 표현
+  // fill(190,190,190,15)//
+  //rect(830,height/3.4,245)//
+  //rect(670,height/3.4,40,245)//
+  //rect(735,height/3.4,40,245)//
+  //rect(-125,height/3.4,245)//
+
+  //기타 줄
+  //stroke(190, 15);
+  //strokeWeight(14);
+
+  //line(1000, 241, 1, 241);
+  //line(1000, 281, 1, 281);
+  //line(1000, 321, 1, 321);
+  //line(1000, 361, 1, 361);
+}

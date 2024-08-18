@@ -1,3 +1,11 @@
+
+
+my-p5js-project/
+│
+├── index.html
+├── sketch.js
+└── README.md
+  
 let dia;
 let angle;
 let r, g, b;
